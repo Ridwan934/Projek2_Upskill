@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* reset template css */
+body, ul, h1
+    {
+    margin: 0;
+    padding: 0;
+    }
+/* global container + gutter*/
+ .container 
+ {
+    max-width: 1344px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+    /* test */
+    /* background: green; */
+ }
+ .col-4 
+ {
+    width:calc(100% / 3 - 24px)
+ }
+ .col-3
+ {
+    width:calc(100% / 4 - 24px);
+ }
+  /* manggil kelas navbar */
+  #navbar
+        {
+            padding: 62px 0;
+            width: 100%;
+            position: absolute;
+        }
+  #navbar .container{
+    justify-content: space-between;
+    align-items: center;
+  }
+  #navbar .Logo  {
+  padding: 0 12px;
+      }
+  #navbar .Logo img {
+height: 60px;
+width: auto;
+  }
+  #navbar .Menu {
+    padding: 0 12px;
+  }
+  #navbar ul {
+    list-style: none;
+  }
+  /* menu tidak masuk kontainer */
+  #navbar ul::after{
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  #navbar ul li {
+    float: left;
+    margin: 0 24px;
+  }
+#navbar ul li a {
+    font-family: 'Anybody';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    color: white;
+    text-decoration: none;
+}
+#navbar ul li a.active {
+
+}
+#navbar .button {
+    margin: 0 12px;
+}
+#navbar .button a {
+
+padding: 14px 24px;
+background: white;
+font-style: normal;
+font-family: "Anybody";
+font-weight: 400px;
+align-items: center;
+font-size: 16px;
+line-height: 17px;
+border-radius: 15px;
+justify-content: center;
+text-decoration: none;
+display: flex;
+}
+#hero {
+    background-color: #0D1728;
+    height: 1276px;
+
+    background-image: url(./images/Icons/Group\ 10669.png);
+    background-position: -295px  -449px;
+    padding: 184px;
+}
+#hero .content 
+{ 
+    margin-top: 191px;
+    padding: 0 12px;
+}
+#hero .content p
+{ 
+    font-family: 'Anybody';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 17px;
+    color: white;
+    text-decoration: none;
+    padding: 0 12px; 
+    opacity: 0.7;
+    text-align: center;
+
+}
+#hero .content h1
+{ 
+    font-family: 'Anybody';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 138% ;
+    color: white;
+    text-decoration: none;
+    padding: 0 12px; 
+    text-align: center;
+}
+#hero .content .getting-started
+{ 
+   width: 50%;
+   margin: 0 auto;
+   border: 1px solid white;
+   border-radius: 1000px;
+   margin-bottom: 70px;
+}
+#hero .content .getting-started form
+{
+    display: flex;
+    margin: 0;
+}
+#hero .content .getting-started input
+{ 
+    padding: 32px 48px;
+    /* position: absolute; */
+    /* width: 832.89px; */
+    /* height: 1764px; */
+    /* left: -295px; */
+    /* top: 68.45px; */
+    background: transparent;
+    color: white;
+    border: 0;
+    flex-grow: 1;
+}
+#hero .content .getting-started button
+{
+    background: white;
+    padding: 38px 38px;
+    font-family: "anybody";
+    font-style: normal;
+    font-size: 20px;
+    color: #293241;
+    font-weight: 700;
+    border-radius: 1000px;
+    line-height: 21px;
+    border: 0;
+    border-radius: 1000px;
+}
+#customer
+{
+    padding-top: 300px;
+}
+
+#customer .container h3
+{
+   
+    font-family: 'Anybody';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 130%; /* or 62px */
+    text-align: center;
+    color: #293241;
+}
+#customer .container .card 
+{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 32px; 
+     width: 424px;
+    height: 222px; */
+    /* background: green; */
+    text-align: center;
+    margin: 0 12px;
+   
+}
+#customer .container .card .star-container
+{
+    margin-bottom: 32px;
+}
+#customer .container .card p
+{
+font-family: 'Anybody';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 32px;
+text-align: center;
+color: #293241;
+}
+/* #confirm .container
+{
+    display: block;
+} */
+#confirm .content
+{
+    padding-top: 152px;    
+}
+#confirm .container h3
+{
+    font-family: 'Anybody';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    color: #293241; 
+} 
+#confirm .container p
+{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    color: #7F848D;
+    padding-top: 12px;
+}  
+#confirm .container .card
+{
+    text-align: center;  
+    background: #1E2746;
+    border-radius: 18px;
+    background-image: url(./Images/Icons/Group.png);
+    margin: 0 auto;
+}
+#confirm .card h3
+{
+font-family: 'Anybody';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 32px;
+color: #FFFFFF;
+padding-top: 24px;
+}
+#confirm .card p
+{
+font-family: 'Anybody';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #D4D6D9;
+padding-bottom: 24px; 
+margin: 0 24px;
+}
+/* #confirm .container .card 
+{
+    opacity: 0.2;
+    border: 2px solid #1E2746;
+    background-color: transparent;
+} */
+/* .container .card
+{
+    background: #1E2746;
+    border-radius: 18px; */
+    /* width: 312px;
+    height: 200px;
+    left: 303.5px;
+    top: 2491px; */
+
+/* } */
+
+
+
+
+

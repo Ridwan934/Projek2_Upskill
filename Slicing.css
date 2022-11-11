@@ -267,12 +267,13 @@ color: #D4D6D9;
 padding-bottom: 24px; 
 margin: 0 24px;
 }
-/* #confirm .container .card 
+#confirm .img-vector
 {
-    opacity: 0.2;
-    border: 2px solid #1E2746;
-    background-color: transparent;
-} */
+    background-image: url(./Images/Icons/Vectorg.png);
+    background-size: 100% 100%;
+    padding: 41px 0;
+    background-position: center center;
+}
 /* .container .card
 {
     background: #1E2746;

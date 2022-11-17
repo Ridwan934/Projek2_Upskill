@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 /* reset template css */
-body, ul, h1
+body, ul, h1, h2, p, ol, h4, h3
     {
     margin: 0;
     padding: 0;
@@ -12,18 +13,30 @@ body, ul, h1
     margin: 0 auto;
     display: flex;
     justify-content: center;
+ }
 
     /* test */
     /* background: green; */
- }
+.col
+{
+    margin: 0 12px;
+}
  .col-4 
  {
     width:calc(100% / 3 - 24px)
  }
  .col-3
  {
-    width:calc(100% / 4 - 24px);
+    width:calc(25% - 24px);
  }
+ .col-8
+ {
+    width: calc(100* 2/3 - 24px);
+ }
+ .col-6
+{
+    width: calc(50% - 24px) ;
+}
   /* manggil kelas navbar */
   #navbar
         {
@@ -95,6 +108,8 @@ display: flex;
     background-image: url(./images/Icons/Group\ 10669.png);
     background-position: -295px  -449px;
     padding: 184px;
+    /* margin-bottom: 440px; */
+    margin-bottom: 50px;
 }
 #hero .content 
 { 
@@ -170,6 +185,7 @@ display: flex;
 #customer
 {
     padding-top: 300px;
+    margin-bottom: 100px;
 }
 
 #customer .container h3
@@ -182,6 +198,7 @@ display: flex;
     line-height: 130%; /* or 62px */
     text-align: center;
     color: #293241;
+    padding-top: 100px;
 }
 #customer .container .card 
 {
@@ -211,24 +228,26 @@ line-height: 32px;
 text-align: center;
 color: #293241;
 }
-/* #confirm .container
+#confirm 
 {
-    display: block;
-} */
-#confirm .content
-{
-    padding-top: 152px;    
+    /* display: block; */
+    margin-bottom: 100px;
 }
-#confirm .container h3
+#confirm .container.content
+{
+    padding-top: 152px;   
+    margin-bottom: 70px; 
+}
+#confirm .container h2
 {
     font-family: 'Anybody';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 700px;
     font-size: 48px;
     text-align: center;
     color: #293241; 
 } 
-#confirm .container p
+.container .title p
 {
     font-family: 'Inter';
     font-style: normal;
@@ -236,7 +255,7 @@ color: #293241;
     font-size: 24px;
     text-align: center;
     color: #7F848D;
-    padding-top: 12px;
+    /* padding-top: 12px; */
 }  
 #confirm .container .card
 {
@@ -246,11 +265,11 @@ color: #293241;
     background-image: url(./Images/Icons/Group.png);
     margin: 0 auto;
 }
-#confirm .card h3
+#confirm .card ol li
 {
 font-family: 'Anybody';
 font-style: normal;
-font-weight: 700;
+font-weight: 700px;
 font-size: 18px;
 line-height: 32px;
 color: #FFFFFF;
@@ -260,7 +279,7 @@ padding-top: 24px;
 {
 font-family: 'Anybody';
 font-style: normal;
-font-weight: 400;
+font-weight: 400px;
 font-size: 16px;
 line-height: 24px;
 color: #D4D6D9;
@@ -285,7 +304,217 @@ margin: 0 24px;
 
 /* } */
 
+#value
+{
+    margin: 0   ;
+    padding: 10px;
+    margin-bottom: 196px;
+}
+#value .container 
+{
+   justify-content: left;
+}
+#value .container .col-6 .card
+{
+    text-align: left;
+    margin: 0;
+    background: #1E2746;
+    border-radius: 16px;
+    /* padding: 10px 0; */
+    /* background-image: url(.); */
+}
+#value .container .card .img-vct
+{   
+   justify-content: left;
+    margin: 28px;
+    /* padding: 20px; */
+    /* background-image: url(.); */
+}
+ #value .container  .teks
+{
+  
+}
+ #value .container  .teks h3
+{
+    font-family: Anybody;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 62px;
+    letter-spacing: 0em;
+    text-align: left;
+} 
+#value .container .teks p
+{
+    font-family: 'Anybody';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    color: #7F848D;
+    text-align: left;
 
+} 
+#grafik 
+{
+    width: 1920px;
+    height: 963px;
+    left: -1px;
+    top: 3504px;
+    background-color: #293241;
+    padding-top: 50px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+#grafik ul li::before
+{
+    content: "";
+    display: inline-block; 
+    width: 32px;
+    height: 32px;
+    background-image: url(./Images/Icons/Vector.png) ;
+    margin-right: 18px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* display: flex;
+    gap: 10px; */
+    /* padding: 20px; */
+}
+#grafik .container .text h3
+{
+    font-family: Anybody;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 62px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    padding-left: 20px;
+    padding-top: 50px;
+}
+#grafik .container .text ul li
+{
+    font-family: Anybody;
+    font-size: 20px;
+    font-weight: 300;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    color: white;
+    /* padding-top: 50px; */
+    padding-left: 20px;
+}
+#grafik .container .img-grafik
+{
+    position: left;
+    padding-top: 50px;
+    padding-right: 50px;
+}
+#pricing .container .teks h3
+{
+    font-family: 'Anybody';
+    font-style: normal;
+    font-weight: 700px;
+    font-size: 48px;
+    line-height: 50px;
+    text-align: center;
+    color: #293241;
+    margin-top: 149px;
+}
+#pricing .container .teks p
+{
+    font-family: 'Anybody';
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 24px;
+    line-height: 25px;
+    text-align: center;
+    color: #7F848D;
+}
 
+    
+#pricing .container .card 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 14px;
+    gap: 10px;
+    width: 72px;
+    height: 72px;
+    background: #EDCB50;
+    border-radius: 12px;
+    justify-content: left;
+    /* Inside auto layout */
+    
+}
+#pricing .container .card .cup
+ {
+    display: flex;
+    gap: 28px;
+ }
+#pricing .container .card .img-cup
+{
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+#pricing .container .card .cup  .teks-cup h3
+{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #EDCB50;
+}
+#pricing .container .card .cup  .teks-cup p
+{
+    display: flex;
+    
+}
+#pricing .container .card .cup  .teks-cup span:first-child
+{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 42px;
+    color: #293241;
+
+}
+#pricing .container .card .cup  .teks-cup span:nth-child(2)
+{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 42px;
+    color: black; 
+    /* padding-top: 10px; */
+}
+#pricing .container .card .cup  .teks-cup span:last-child
+{
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #545B67;
+    display: inline;
+}
+/* width: 73px;
+height: 42px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 42px;
+color: #293241; */
 
 
